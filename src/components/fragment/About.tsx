@@ -4,7 +4,7 @@ const About = () => {
       <h2 className="text-3xl font-bold text-center mb-8 text-black border-b-4 border-black inline-block">
         About Us
       </h2>
-      <div className="flex flex-col gap-5 rounded-lg text-black bg-white border-2 border-black p-8 shadow-[8px_8px_0_0_rgba(0,0,0,1)]">
+      <div className="flex flex-col text-sm xl:text-base gap-5 rounded-lg text-black bg-white border-2 border-black p-8 shadow-[8px_8px_0_0_rgba(0,0,0,1)]">
         <p className="text-center">
           We are a team of developers dedicated to providing a powerful platform
           for{" "}

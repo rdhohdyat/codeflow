@@ -123,12 +123,12 @@ export const Navbar = () => {
                   <a href="#about" className="text-black text-xl font-semibold px-4 py-2">
                     About
                   </a>
-                  <Link to="" className="text-black text-xl font-semibold px-4 py-2">
+                  <a href="#service" className="text-black text-xl font-semibold px-4 py-2">
                     Service
-                  </Link>
-                  <Link to="" className="text-black text-xl font-semibold px-4 py-2">
+                  </a>
+                  <a href="#contact" className="text-black text-xl font-semibold px-4 py-2">
                     Contact
-                  </Link>
+                  </a>
                   <Button className="w-full" onClick={() => navigate("/work")}>
                     Get Started!
                   </Button>

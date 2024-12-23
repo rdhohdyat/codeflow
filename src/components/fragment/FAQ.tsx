@@ -18,7 +18,7 @@ const FAQ = () => {
         "CodeFlow is a feature in our application that visually represents the control flow of a program, helping developers understand and analyze their code.",
     },
     {
-      question: "How does the application generate a Control Flow Graph?",
+      question: "How does the application generate a CFG ?",
       answer:
         "The application parses the source code and identifies control structures like loops, conditions, and function calls to construct the graph.",
     },

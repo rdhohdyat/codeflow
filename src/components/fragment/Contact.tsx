@@ -14,7 +14,7 @@ const Contact = () => {
       </p>
 
       <div className="max-w-2xl mx-auto">
-        <form className="space-y-6 bg-white border-2 rounded-lg border-black p-8 shadow-[8px_8px_0_0_rgba(0,0,0,1)]">
+        <form className="space-y-6 bg-white border-2 rounded-lg border-black p-4 xl:p-8 shadow-[8px_8px_0_0_rgba(0,0,0,1)]">
           <div>
             <label
               htmlFor="name"
