@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const Home = () => {
@@ -14,9 +15,9 @@ const Home = () => {
         </p>
 
         <div className="flex flex-col xl:flex-row gap-3 justify-center">
-          <a href="/work">
+          <Link to="/work">
             <Button>Start using CodeFlow</Button>
-          </a>
+          </Link>
           <a href="#docs">
             <Button variant="neutral">Learn more about CodeFlow</Button>
           </a>
