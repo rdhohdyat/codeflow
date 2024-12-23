@@ -27,9 +27,6 @@ export const Navbar = () => {
   const location = useLocation();
 
   const isWorkPage = location.pathname === "/work";
-  
-
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-white shadow-[1px_2px_0_0_rgba(0,0,0,1)]">
       <div className="flex justify-between items-center xl:px-20 py-4 px-4">
@@ -41,9 +38,9 @@ export const Navbar = () => {
           <Link to="/" className="text-black font-semibold px-4 py-2">
             Home
           </Link>
-          <Link to="#" className="text-black font-semibold px-4 py-2">
+          <a href={isWorkPage ? "/" : "#docs"} className="text-black font-semibold px-4 py-2">
             Docs
-          </Link>
+          </a>
 
           {isWorkPage && (
             <AlertDialog>
@@ -67,15 +64,15 @@ export const Navbar = () => {
 
           {!isWorkPage && (
             <>
-              <Link to="" className="text-black font-semibold px-4 py-2">
+              <a href="#about" className="text-black font-semibold px-4 py-2">
                 About
-              </Link>
-              <Link to="" className="text-black font-semibold px-4 py-2">
+              </a>
+              <a href="#service" className="text-black font-semibold px-4 py-2">
                 Service
-              </Link>
-              <Link to="" className="text-black font-semibold px-4 py-2">
+              </a>
+              <a href="#contact" className="text-black font-semibold px-4 py-2">
                 Contact
-              </Link>
+              </a>
               <Button onClick={() => navigate("/work")}>Get Started!</Button>
             </>
           )}
@@ -92,12 +89,12 @@ export const Navbar = () => {
               <SheetTitle className="text-2xl">CodeFlow</SheetTitle>
             </SheetHeader>
             <div className="flex flex-col mt-5 items-center justify-center gap-5 xl:hidden space-x-2">
-              <Link to="/" className="text-black text-xl font-semibold px-4 py-2">
+              <a href="/" className="text-black text-xl font-semibold px-4 py-2">
                 Home
-              </Link>
-              <Link to="#" className="text-black text-xl font-semibold px-4 py-2">
+              </a>
+              <a href="#docs" className="text-black text-xl font-semibold px-4 py-2">
                 Docs
-              </Link>
+              </a>
 
               {isWorkPage && (
                 <AlertDialog>
@@ -123,9 +120,9 @@ export const Navbar = () => {
 
               {!isWorkPage && (
                 <>
-                  <Link to="" className="text-black text-xl font-semibold px-4 py-2">
+                  <a href="#about" className="text-black text-xl font-semibold px-4 py-2">
                     About
-                  </Link>
+                  </a>
                   <Link to="" className="text-black text-xl font-semibold px-4 py-2">
                     Service
                   </Link>

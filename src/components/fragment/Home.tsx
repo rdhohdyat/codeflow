@@ -1,9 +1,6 @@
 import { Button } from "../ui/button";
-import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="container flex justify-center items-center gap-2 mt-24 sm:mt-32 md:mt-44 px-4">
       <div className="w-full max-w-[600px] text-center flex flex-col gap-6">
@@ -17,9 +14,9 @@ const Home = () => {
         </p>
 
         <div className="flex flex-col xl:flex-row gap-3 justify-center">
-          <Button onClick={() => navigate("/work")}>
-            Start using CodeFlow
-          </Button>
+          <a href="/work">
+            <Button>Start using CodeFlow</Button>
+          </a>
           <a href="#docs">
             <Button variant="neutral">Learn more about CodeFlow</Button>
           </a>
