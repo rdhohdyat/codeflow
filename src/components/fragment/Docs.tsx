@@ -49,7 +49,7 @@ const Docs = () => {
   ];
 
   return (
-    <section className="py-20 xl:px-60 container text-center">
+    <section id="docs" className="py-20 xl:px-60 container text-center">
       <h2 className="text-3xl text-center font-bold  mb-8 text-black border-b-4 border-black inline-block">
         How CodeFlow Work?
       </h2>
