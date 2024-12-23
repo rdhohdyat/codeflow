@@ -11,8 +11,8 @@ const StepCard = (props : Step) => {
         {props.icon}
       </div>
       <div>
-        <h1 className="font-semibold text-sm xl:text-xl">{props.title}</h1>
-        <p className="text-xs xl:text-sm">{props.description}</p>
+        <h1 className="font-semibold text-lg xl:text-xl">{props.title}</h1>
+        <p className="text-sm">{props.description}</p>
       </div>
     </div>
   );
